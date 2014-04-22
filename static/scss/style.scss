@@ -1,2 +1,14 @@
-@import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
-@import '../bower_components/font-awesome/scss/font-awesome.scss';
+$font-family-base:	"Open Sans", sans-serif;
+$headings-font-family:	"Bree Serif", serif;
+
+$font-size-base:	16px;
+
+$link-color:		#9e4943;
+$text-color:		#333333;
+
+@import 'bootstrap.scss';
+@import 'font-awesome.scss';
+
+html {
+  height: 100%;
+}
