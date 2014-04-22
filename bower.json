@@ -1,0 +1,22 @@
+{
+  "name": "pelican-crisp-theme",
+  "version": "1.0.0",
+  "authors": [
+    "Barry O'Rourke <barry@orodor.org.uk>"
+  ],
+  "description": "crisp theme for pelican",
+  "license": "Creative Commons Attribution-Non-Commercial-ShareAlike 4.0 International",
+  "homepage": "http://www.orodor.org.uk",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.1.1"
+  }
+}
