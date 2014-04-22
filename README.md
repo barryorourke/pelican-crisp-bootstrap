@@ -3,7 +3,7 @@ pelican-crisp-rewrite
 
 a rewrite of the Crisp Ghost theme using bootstrap, for Pelican!
 
-# Prerequisites
+## Prerequisites
 
 * [python](http://python.org) and [pip](https://pypi.python.org/pypi/pip).
 * [nodejs](http://nodejs.org) and [npm](http://www.npmjs.com).
