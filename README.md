@@ -10,7 +10,7 @@ a rewrite of the Crisp Ghost theme using bootstrap, for Pelican!
 * [ruby](http://ruby-lang.com) and [bundler](http://bundler.io).
 * a local copy of the [pelican-plugins](https://github.com/getpelican/pelican-plugins) repository.
 
-# Installing dependencies
+## Installing dependencies
 
 ```
 npm -g install bower
@@ -19,7 +19,7 @@ bower install
 pip install webassets
 ```
 
-# Configure Pelican
+## Configure Pelican
 
 You'll need to modify your *pelicanconf.py* to include the assets plugin, something like this should do the job:
 
