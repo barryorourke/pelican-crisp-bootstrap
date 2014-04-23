@@ -27,3 +27,8 @@ You'll need to modify your *pelicanconf.py* to include the assets plugin, someth
 PLUGIN_PATH = '/path/to/pelican/plugins/directory'
 PLUGINS = ['assets']
 ```
+
+### Credits
+
+The original inspiration came from Kathy Qian's [Crisp](https://github.com/kathyqian/crisp-ghost-theme) theme for Ghost.
+I also used parts of Bootstrap Zero's [Basis](http://www.bootstrapzero.com/bootstrap-template/basis) template to get the fixed sidebar working with bootstrap.

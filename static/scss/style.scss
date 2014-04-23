@@ -7,8 +7,110 @@ $link-color:		#9e4943;
 $text-color:		#333333;
 
 @import 'bootstrap.scss';
-@import 'font-awesome.scss';
+@import '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css';
 
-html {
+html, body {
   height: 100%;
 }
+
+.wrapper, .row {
+   height: 100%;
+   margin-left:0;
+   margin-right:0;
+}
+
+.wrapper:before, .wrapper:after,
+.column:before, .column:after {
+  content: "";
+  display: table;
+}
+
+.wrapper:after,
+.column:after {
+  clear: both;
+}
+
+.column {
+  height: 100%;
+  overflow: auto;
+}
+
+.box {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#sidebar {
+  border-right: 1px solid #dddddd;
+  padding: 2.25em;
+}
+
+#sidebar #logo img {
+  width: 10em;
+  height: 10em;
+  border: 2px solid #444444;
+}
+
+#sidebar h1 {
+  font-size: 1.8em;
+  margin: 0.5em 0;
+}
+
+#sidebar h1 a {
+  color: #444444;
+}
+#sidebar h1 a:hover {
+  text-decoration: none;
+}
+
+.social {
+  margin: 1em 0;
+}
+
+.social li {
+  display: inline-block;
+  padding: 0 0.25em;
+}
+
+.social li a {
+  padding: 10px 0;
+}
+
+.social li a:hover {
+  background-color: transparent;
+}
+
+.social li.flickr a:hover {
+  color: #72858c;
+}
+
+.social li.github a:hover {
+  color: #4183c4;
+}
+
+.social li.rss a:hover {
+  color: #f16b24;
+}
+
+.social li.tumblr a:hover {
+  color: #2c4762;
+}
+
+.social li.twitter a:hover {
+  color: #44ccf6;
+}
+
+#footer {
+  padding: 1em 0em 2.5em 0em;
+  font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+  .column {
+    height: auto;
+  }
+}
+
