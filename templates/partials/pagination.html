@@ -1,0 +1,24 @@
+            {% if articles_page and articles_paginator.num_pages > 1 %}
+            <!-- pagination start -->
+            <nav class="text-center paginator">
+                <ul class="pager">
+                {% if articles_page.has_previous() %}
+                {% set num = articles_page.previous_page_number() %}
+                    <li>
+                        <a href="{{ SITEURL }}/{% if num > 1 %}page/{{ num }}/{% endif %}index.html">&laquo;</a>
+                    </li>
+                {% else %}
+                    <li class="disabled"><a href="#">&laquo;</a></li>
+                {% endif %}
+                <li class="which-page text-center">Page {{ articles_page.number }} of {{ articles_paginator.num_pages }}</li>
+                {% if articles_page.has_next() %}
+                    <li>
+                        <a href="{{ SITEURL }}/page/{{ articles_page.next_page_number() }}/index.html">&raquo;</a>
+                    </li>
+                {% else %}
+                    <li class="disabled"><a href="#">&laquo;</a></li>
+                {% endif %}
+                </ul>
+            </nav>
+            <!-- pagination end -->
+            {% endif %}
