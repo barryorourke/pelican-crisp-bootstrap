@@ -2,6 +2,7 @@ $font-family-base:	"Open Sans", sans-serif;
 $headings-font-family:	"Bree Serif", serif;
 
 $font-size-base:	16px;
+$font-size-h1:		1.8em;
 
 $link-color:		#9e4943;
 $text-color:		#333333;
@@ -11,6 +12,21 @@ $text-color:		#333333;
 
 html, body {
   height: 100%;
+}
+
+h1 {
+  margin-bottom: 0em;
+  a {
+    color: #444444;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+h2.index {
+  font-size: 1.2em;
+  margin: 0.35em 0 0.6em 0;
 }
 
 .wrapper, .row {
@@ -54,20 +70,7 @@ html, body {
   border: 2px solid #444444;
 }
 
-#sidebar h1 {
-  font-size: 1.8em;
-  margin: 0.5em 0;
-}
-
-#sidebar h1 a {
-  color: #444444;
-}
 #sidebar h1 a:hover {
-  text-decoration: none;
-}
-
-.social {
-  margin: 1em 0;
 }
 
 .social li {
@@ -76,7 +79,7 @@ html, body {
 }
 
 .social li a {
-  padding: 10px 0;
+  padding: 0.5em 0;
 }
 
 .social li a:hover {
