@@ -2,7 +2,7 @@
 {% block content %}
             {% if articles %}
             {% for article in (articles_page.object_list if articles_page else articles) %}
-            <h2 class="index">
+            <h2 class="index-header">
 	      <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a> 
 	      <span>&middot; {{ article.date| strftime('%A, %B %d, %Y') }}</span>
 	    </h2>
